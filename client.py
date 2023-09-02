@@ -6,6 +6,7 @@ import threading
 HEADER = 64
 PORT = 
 FORMAT = 'utf-8'
+DISCONNECT_MESSAGE = "!DISCONNECT"
 SERVER = '' #ip
 ADDR = (SERVER, PORT)
 
@@ -71,3 +72,9 @@ while y != 'exit':
     y = input()
     send(y)
 
+    
+
+
+
+
+send(DISCONNECT_MESSAGE)
